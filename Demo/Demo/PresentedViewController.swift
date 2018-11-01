@@ -12,7 +12,7 @@ class PresentedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        SBAProgressHud.shared.showHud(to: view,title: "Loading...",removeAfter: 2)
+        SBAProgressHud.showHud(to: view,title: "Loading...",removeAfter: 2)
 
         // Do any additional setup after loading the view.
     }

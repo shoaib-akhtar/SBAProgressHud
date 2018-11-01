@@ -13,7 +13,7 @@ class ViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        SBAProgressHud.shared.showHud(to: view,title: "Loading...",removeAfter: 2)
+        SBAProgressHud.showHud(to: view,title: "Loading...",removeAfter: 2)
 
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 //            SBAProgressHud.hideHud(from: self.view)

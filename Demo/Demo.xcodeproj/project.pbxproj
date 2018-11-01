@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48295433218AD1750083AD61 /* SBAProgressHud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48295432218AD1750083AD61 /* SBAProgressHud.storyboard */; };
 		48FD33FF218588E800FEDEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD33FE218588E800FEDEC2 /* AppDelegate.swift */; };
 		48FD3401218588E800FEDEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD3400218588E800FEDEC2 /* ViewController.swift */; };
 		48FD3404218588E800FEDEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FD3402218588E800FEDEC2 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48295432218AD1750083AD61 /* SBAProgressHud.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBAProgressHud.storyboard; sourceTree = "<group>"; };
 		48FD33FB218588E800FEDEC2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FD33FE218588E800FEDEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FD3400218588E800FEDEC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		48FD33FD218588E800FEDEC2 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				48295432218AD1750083AD61 /* SBAProgressHud.storyboard */,
 				48FD33FE218588E800FEDEC2 /* AppDelegate.swift */,
 				48FD3400218588E800FEDEC2 /* ViewController.swift */,
 				48FD342E21862C1F00FEDEC2 /* PresentedViewController.swift */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48295433218AD1750083AD61 /* SBAProgressHud.storyboard in Resources */,
 				48FD3409218588E900FEDEC2 /* LaunchScreen.storyboard in Resources */,
 				48FD3406218588E900FEDEC2 /* Assets.xcassets in Resources */,
 				48FD3404218588E800FEDEC2 /* Main.storyboard in Resources */,
@@ -443,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9P8R55ACV;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E9P8R55ACV;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
