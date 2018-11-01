@@ -121,7 +121,7 @@ extension StoryboardInitializable where Self: UIViewController {
     }
     
     static func initFromStoryboard() -> Self {
-        let storyboard = UIStoryboard(name: storyboardName(), bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: storyboardName(), bundle: Bundle.init(for: self))
         return storyboard.instantiateViewController(withIdentifier: storyboardIdentifier) as! Self
     }
 }
