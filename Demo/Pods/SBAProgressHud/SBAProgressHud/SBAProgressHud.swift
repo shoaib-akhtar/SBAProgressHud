@@ -60,7 +60,7 @@ fileprivate class SBAProgressHudInternal {
 fileprivate class SBAProgressRootViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         get{
-            return .lightContent
+            return UIApplication.shared.statusBarStyle
         }
     }
 }
@@ -76,7 +76,7 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
     @IBOutlet weak var labelTopConstraint: NSLayoutConstraint!
     override var preferredStatusBarStyle: UIStatusBarStyle{
         get{
-            return .lightContent
+            return UIApplication.shared.statusBarStyle
         }
     }
     

@@ -14,7 +14,6 @@
 		48FD3409218588E900FEDEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FD3407218588E900FEDEC2 /* LaunchScreen.storyboard */; };
 		48FD3414218588E900FEDEC2 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD3413218588E900FEDEC2 /* DemoTests.swift */; };
 		48FD341F218588E900FEDEC2 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD341E218588E900FEDEC2 /* DemoUITests.swift */; };
-		48FD342F21862C1F00FEDEC2 /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD342E21862C1F00FEDEC2 /* PresentedViewController.swift */; };
 		94D1C6292A98BCF45FB27E10 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 354AF251EC108F56FF3A4E52 /* Pods_DemoUITests.framework */; };
 		9BBDE6BCBCFA140520CCC375 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6411B7D766645F01F17AFFA /* Pods_Demo.framework */; };
 		A00C9E9E59AA98AF54D7EB6C /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E05D8688CA1C7E84B5C453 /* Pods_DemoTests.framework */; };
@@ -54,7 +53,6 @@
 		48FD341A218588E900FEDEC2 /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FD341E218588E900FEDEC2 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		48FD3420218588E900FEDEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48FD342E21862C1F00FEDEC2 /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		6466DF1FD1B27BC621F4542D /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		682AF9B70E228C2E62E8EA8C /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C5E05D8688CA1C7E84B5C453 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +126,6 @@
 			children = (
 				48FD33FE218588E800FEDEC2 /* AppDelegate.swift */,
 				48FD3400218588E800FEDEC2 /* ViewController.swift */,
-				48FD342E21862C1F00FEDEC2 /* PresentedViewController.swift */,
 				48FD3402218588E800FEDEC2 /* Main.storyboard */,
 				48FD3405218588E900FEDEC2 /* Assets.xcassets */,
 				48FD3407218588E900FEDEC2 /* LaunchScreen.storyboard */,
@@ -179,7 +176,7 @@
 				48FD33F7218588E800FEDEC2 /* Sources */,
 				48FD33F8218588E800FEDEC2 /* Frameworks */,
 				48FD33F9218588E800FEDEC2 /* Resources */,
-				4992573FFA09DA38194B032A /* [CP] Embed Pods Frameworks */,
+				FD91CF2EA3F263E4DE050B8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,24 +296,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4992573FFA09DA38194B032A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SBAProgressHud/SBAProgressHud.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBAProgressHud.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7CF7A37DF1A0A47A7ADD71D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +350,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD91CF2EA3F263E4DE050B8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SBAProgressHud/SBAProgressHud.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBAProgressHud.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,7 +376,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FD3401218588E800FEDEC2 /* ViewController.swift in Sources */,
-				48FD342F21862C1F00FEDEC2 /* PresentedViewController.swift in Sources */,
 				48FD33FF218588E800FEDEC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

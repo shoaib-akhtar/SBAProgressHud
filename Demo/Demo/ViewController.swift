@@ -9,16 +9,29 @@
 import UIKit
 import SBAProgressHud
 
-class ViewController: UITabBarController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        SBAProgressHud.showHud(to: view,title: "Loading...",removeAfter: 2)
-
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//            SBAProgressHud.hideHud(from: self.view)
-//        }
+        tableView.tableFooterView = UIView.init(frame: CGRect.zero)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.row {
+        case 0:
+            SBAProgressHud.showHud(to: view,removeAfter: 2)
+        case 1:
+            SBAProgressHud.showHud(to: view,title: "Loading...",removeAfter: 2)
+        case 2:
+            SBAProgressHud.showHud(to: view, title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
+        case 3:
+            SBAProgressHud.showHud(to: view, title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
+        case 4:
+            SBAProgressHud.showHud(to: view, title: "Loading...", tintColor: UIColor.orange,dimBackground: true,removeAfter: 3)
+        default:
+            print("Empty")
+        }
     }
 
 
