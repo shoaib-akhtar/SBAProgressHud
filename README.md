@@ -26,6 +26,13 @@ Hide hud from view
 ```swift
 SBAProgressHud.hideHud(from: view)
 ```
+
+Customization
+
+```swift
+SBAProgressHud.showHud(to: view, title: "Loading..", tintColor: UIColor.orange, dimBackground: true, removeAfter: 5)
+```
+
 Congratulations! You're done.
 
 License
