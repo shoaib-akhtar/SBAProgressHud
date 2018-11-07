@@ -9,6 +9,8 @@
 import UIKit
 public enum SBAProgressType: Int{
     case indeterminate
+    case success
+    case error
 }
 public class SBAProgressHud{
     @available(*, deprecated, message: "This method is deprecated, will be removed in future releases")
@@ -48,7 +50,7 @@ fileprivate class SBAProgressHudInternal {
         progressViewController = SBAProgressViewController.initFromStoryboard()
         alertWindow.rootViewController?.present(progressViewController!, animated: true, completion: nil)
         
-        progressViewController?.setUp(with: title, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
+        progressViewController?.setUp(with: title,type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
         
         if let removeAfter = removeAfter{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 * removeAfter) {
@@ -83,6 +85,8 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
     @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var indicatorImageView: UIImageView!
+
     
     @IBOutlet weak var labelTopConstraint: NSLayoutConstraint!
     override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -90,8 +94,15 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
             return UIApplication.shared.statusBarStyle
         }
     }
+    func bundle() -> Bundle {
+        return Bundle.init(for: SBAProgressViewController.self)
+    }
+    func image(named: String) -> UIImage? {
+        let image = UIImage.init(named: named, in: bundle(), compatibleWith: nil)
+        return image
+    }
     
-    func setUp(with title: String? = nil,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil) {
+    func setUp(with title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil) {
         
         if let title = title, !title.isEmpty{
             labelTopConstraint.constant = 8
@@ -102,13 +113,28 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .medium)
         titleLabel.numberOfLines = 0
-        
-        
-        activityIndicatorView.startAnimating()
-        activityIndicatorView.color = tintColor
-        
         activityView.layer.cornerRadius = 5.0
         activityView.layer.masksToBounds = true
+        
+        //
+        activityIndicatorView.isHidden = true
+        indicatorImageView.isHidden = true
+        //
+        
+        
+        switch type {
+        case .indeterminate:
+            activityIndicatorView.isHidden = false
+            activityIndicatorView.startAnimating()
+            activityIndicatorView.color = tintColor
+        case .success:
+            indicatorImageView.isHidden = false
+            indicatorImageView.image = UIImage.init(named: "SBATick.png")
+        case .error:
+            indicatorImageView.isHidden = false
+            indicatorImageView.image = image(named: "SBACross.png")
+        }
+        
         
         if dimBackground{
             view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)

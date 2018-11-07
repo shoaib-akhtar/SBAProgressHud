@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = "SBAProgressHud/*.swift"
   s.resource_bundles = { "SBAProgressHud" => "SBAProgressHud/*.{lproj,storyboard,png}" }
-  s.resource = 'SBAProgressHud/SBAProgressHud.storyboard'
+  s.resources = 'SBAProgressHud/*.{storyboard,png}'
   s.frameworks   = 'Foundation', 'UIKit'
   s.swift_version = '4.2'
 end

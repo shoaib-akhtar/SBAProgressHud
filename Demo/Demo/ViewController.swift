@@ -26,9 +26,9 @@ class ViewController: UITableViewController {
         case 2:
             SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
         case 3:
-            SBAProgressHud.showHud(title: "Loading...",dimBackground: true,removeAfter: 2)
+            SBAProgressHud.showHud(title: "Loading...",type: .error,dimBackground: true,removeAfter: 2)
         case 4:
-            SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 3)
+            SBAProgressHud.showHud(title: "Loading...",type: .success, tintColor: UIColor.orange,removeAfter: 3)
         default:
             print("Empty")
         }

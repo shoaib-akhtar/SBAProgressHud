@@ -6,7 +6,7 @@ target 'Demo' do
   use_frameworks!
 
   # Pods for Demo
-  pod 'SBAProgressHud'
+  pod 'SBAProgressHud', :git => 'https://github.com/shoaib-akhtar/SBAProgressHud', :branch => 'master'
 
 
   target 'DemoTests' do

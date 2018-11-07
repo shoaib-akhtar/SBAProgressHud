@@ -13,7 +13,7 @@
         <!--Progress View Controller-->
         <scene sceneID="Mtk-6C-dt7">
             <objects>
-                <viewController storyboardIdentifier="SBAProgressViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="3lP-s6-Szt" customClass="SBAProgressViewController" customModule="MyStuff" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SBAProgressViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="3lP-s6-Szt" customClass="SBAProgressViewController" customModule="SBAProgressHud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OF2-n2-XIb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,13 +35,20 @@
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Axp-xO-CeI">
                                                 <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
                                             </activityIndicatorView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qy2-ak-eqb">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="Qy2-ak-eqb" firstAttribute="top" secondItem="M0z-WP-yMY" secondAttribute="top" id="6qT-lq-uHw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qy2-ak-eqb" secondAttribute="trailing" id="MO4-kp-Rte"/>
                                             <constraint firstAttribute="bottom" secondItem="Axp-xO-CeI" secondAttribute="bottom" id="N2G-WS-iIC"/>
+                                            <constraint firstItem="Qy2-ak-eqb" firstAttribute="leading" secondItem="M0z-WP-yMY" secondAttribute="leading" id="Pcr-ta-LMF"/>
                                             <constraint firstAttribute="trailing" secondItem="Axp-xO-CeI" secondAttribute="trailing" id="Um9-45-0Ck"/>
                                             <constraint firstItem="Axp-xO-CeI" firstAttribute="top" secondItem="M0z-WP-yMY" secondAttribute="top" id="VHP-zc-cxv"/>
                                             <constraint firstItem="Axp-xO-CeI" firstAttribute="leading" secondItem="M0z-WP-yMY" secondAttribute="leading" id="gQn-Kr-LgQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qy2-ak-eqb" secondAttribute="bottom" id="kM1-EX-Pc1"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Loading" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS0-Um-AAc">
@@ -82,6 +89,7 @@
                     <connections>
                         <outlet property="activityIndicatorView" destination="Axp-xO-CeI" id="cmr-ip-EeT"/>
                         <outlet property="activityView" destination="Af5-zn-fsG" id="vEe-o5-RUr"/>
+                        <outlet property="indicatorImageView" destination="Qy2-ak-eqb" id="Ac1-Q3-d9c"/>
                         <outlet property="labelTopConstraint" destination="cza-Wx-ra2" id="Kox-R7-XEH"/>
                         <outlet property="titleLabel" destination="dS0-Um-AAc" id="U0e-e8-57Y"/>
                     </connections>

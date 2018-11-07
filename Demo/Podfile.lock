@@ -1,5 +1,5 @@
 PODS:
-  - SBAProgressHud (1.0)
+  - SBAProgressHud (1.2)
 
 DEPENDENCIES:
   - SBAProgressHud (from `https://github.com/shoaib-akhtar/SBAProgressHud`, branch `master`)
@@ -11,11 +11,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SBAProgressHud:
-    :commit: f0efbbfd61d0140ef44e33c24828ccbc087a46ce
+    :commit: 597825254ef365a53f97828422b31c7c730778b3
     :git: https://github.com/shoaib-akhtar/SBAProgressHud
 
 SPEC CHECKSUMS:
-  SBAProgressHud: baaa2b34bd367c43422443dd9fdec758d7c8b08f
+  SBAProgressHud: aed4ee311850bded4767a52b908102749f43ab44
 
 PODFILE CHECKSUM: 11924bcf3f93003be0179b0ef3d2620508d63021
 
