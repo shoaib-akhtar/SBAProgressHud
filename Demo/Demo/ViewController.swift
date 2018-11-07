@@ -18,20 +18,41 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch indexPath.row {
+        
+        switch indexPath.section {
+            
         case 0:
-            SBAProgressHud.showHud(removeAfter: 2)
+            
+            switch indexPath.row {
+            case 0:
+                SBAProgressHud.showHud(removeAfter: 2)
+            case 1:
+                SBAProgressHud.showHud(title: "Loading...",removeAfter: 2)
+            case 2:
+                SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
+            case 3:
+                SBAProgressHud.showHud(title: "Loading...",dimBackground: true,removeAfter: 2)
+            case 4:
+                SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 3)
+            default:
+                print("Empty")
+            }
+            
         case 1:
-            SBAProgressHud.showHud(title: "Loading...",removeAfter: 2)
-        case 2:
-            SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
-        case 3:
-            SBAProgressHud.showHud(title: "Loading...",type: .error,dimBackground: true,removeAfter: 2)
-        case 4:
-            SBAProgressHud.showHud(title: "Loading...",type: .success, tintColor: UIColor.orange,removeAfter: 3)
+            switch indexPath.row {
+            case 0:
+                SBAProgressHud.showHud(title: nil,type: .success,removeAfter: 2)
+            case 1:
+                SBAProgressHud.showHud(title: "Error",type: .success,removeAfter: 2)
+            
+            default:
+                print("Empty")
+            }
+        
         default:
-            print("Empty")
-        }
+        print("Empty")
+    
+    }
     }
 
 

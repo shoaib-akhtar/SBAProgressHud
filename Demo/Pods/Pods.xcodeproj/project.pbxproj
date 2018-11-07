@@ -13,8 +13,11 @@
 		3C65AC778007DB6DED51AFF3B11B33DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		400274C115F4EB21781704B1CF408021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		4B231E035E89688863B916778BA9FA7C /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6769A6750FB9D8CE749D8BF1A9B0890C /* Pods-Demo-dummy.m */; };
+		4ED000B9BC349B627FCEC108431DF9CB /* SBACross.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF9EE648AC544A256CF347AD9C65FE /* SBACross.png */; };
+		512919D0D7C524D9C1C89EB93C0782AB /* SBAProgressHud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A77435B89F61E10E6C7E1E9EDB4B9DC9 /* SBAProgressHud.bundle */; };
 		5252E6AED28C1CE6055A763DDCF566BA /* SBATick.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1DA220FC6AE9E1E9FD6C030B4A91C5 /* SBATick.png */; };
 		65B4A10D040C0002801248AFFA6DA18D /* Pods-DemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A80739A96D3A4F0243806AA56B9403C9 /* Pods-DemoUITests-dummy.m */; };
+		74CAAD2972EA61DA26E4824CBA94C13A /* SBATick.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1DA220FC6AE9E1E9FD6C030B4A91C5 /* SBATick.png */; };
 		809427CC5BCACEA104967F4E6E9F4462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		826C329EFB989451178CCFBB8FA86020 /* SBAProgressHud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6623A9F15FCA51B4C3488B43BBA6C62F /* SBAProgressHud.storyboard */; };
 		8568B53618F1AC3241D5538EEC503B37 /* SBAProgressHud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D715EFEF7A750503E0915A2E6E00E9C6 /* SBAProgressHud-dummy.m */; };
@@ -22,10 +25,9 @@
 		8F103064B5732F34AD7CEF06E5241EAD /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7F4E1458F7255A9530ADBE12329DEC /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D56445753C83F45BF608AEF191C8345 /* SBACross.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF9EE648AC544A256CF347AD9C65FE /* SBACross.png */; };
 		A909E0BC955216DD88DC93BE4A8CC98D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		AE1373C8827128E88E250E1F0FAE86DB /* SBAProgressHud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6623A9F15FCA51B4C3488B43BBA6C62F /* SBAProgressHud.storyboard */; };
 		B9883B696634072C1A7FBE4E0257177A /* Pods-DemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C16EAA86588BCE11DFA5022A231C13 /* Pods-DemoTests-dummy.m */; };
-		E7AE51C22B7FBA08B2A17D7B055D78BC /* SBAProgressHud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A77435B89F61E10E6C7E1E9EDB4B9DC9 /* SBAProgressHud.bundle */; };
 		F19E88A2B47D5AC8D8D8C24A797C48C4 /* SBAProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5161990AADAE380D9C90147108B2C472 /* SBAProgressHud.swift */; };
-		FDA9076B4867D0E4238859D7A890F8F0 /* SBAProgressHud.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6623A9F15FCA51B4C3488B43BBA6C62F /* SBAProgressHud.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,7 +384,7 @@
 			buildPhases = (
 				5D185B6F901DD1211D8146C4E6985879 /* Sources */,
 				A260AA51C2E4654166274BCF0C9C9754 /* Frameworks */,
-				3C05ADFB1B7EC6B9429B829F41EC2CAB /* Resources */,
+				ABF9BF11B94445523875BAAD4601E72D /* Resources */,
 				7719AF176D038CD6D9161F12CE196EDC /* Headers */,
 			);
 			buildRules = (
@@ -462,15 +464,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3C05ADFB1B7EC6B9429B829F41EC2CAB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7AE51C22B7FBA08B2A17D7B055D78BC /* SBAProgressHud.bundle in Resources */,
-				FDA9076B4867D0E4238859D7A890F8F0 /* SBAProgressHud.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7ED3D9B2BED45FF0FE5E82647010E510 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +471,17 @@
 				9D56445753C83F45BF608AEF191C8345 /* SBACross.png in Resources */,
 				826C329EFB989451178CCFBB8FA86020 /* SBAProgressHud.storyboard in Resources */,
 				5252E6AED28C1CE6055A763DDCF566BA /* SBATick.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF9BF11B94445523875BAAD4601E72D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ED000B9BC349B627FCEC108431DF9CB /* SBACross.png in Resources */,
+				512919D0D7C524D9C1C89EB93C0782AB /* SBAProgressHud.bundle in Resources */,
+				AE1373C8827128E88E250E1F0FAE86DB /* SBAProgressHud.storyboard in Resources */,
+				74CAAD2972EA61DA26E4824CBA94C13A /* SBATick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

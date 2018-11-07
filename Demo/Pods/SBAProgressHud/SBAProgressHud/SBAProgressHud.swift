@@ -98,7 +98,7 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         return Bundle.init(for: SBAProgressViewController.self)
     }
     func image(named: String) -> UIImage? {
-        let image = UIImage.init(named: named, in: bundle(), compatibleWith: nil)
+        let image = UIImage.init(named: named, in: bundle(), compatibleWith: nil)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         return image
     }
     
@@ -116,7 +116,15 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         activityView.layer.cornerRadius = 5.0
         activityView.layer.masksToBounds = true
         
-        //
+        // Customisation
+        activityView.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.2).cgColor
+        activityView.layer.borderWidth = 0.5
+        
+        // Applying tint
+        activityIndicatorView.color = tintColor
+        indicatorImageView.tintColor = tintColor
+        
+        // Hiding all views
         activityIndicatorView.isHidden = true
         indicatorImageView.isHidden = true
         //
@@ -126,13 +134,12 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         case .indeterminate:
             activityIndicatorView.isHidden = false
             activityIndicatorView.startAnimating()
-            activityIndicatorView.color = tintColor
         case .success:
             indicatorImageView.isHidden = false
-            indicatorImageView.image = UIImage.init(named: "SBATick.png")
+            indicatorImageView.image = image(named: "SBATick")
         case .error:
             indicatorImageView.isHidden = false
-            indicatorImageView.image = image(named: "SBACross.png")
+            indicatorImageView.image = image(named: "SBACross")
         }
         
         
@@ -162,3 +169,4 @@ extension StoryboardInitializable where Self: UIViewController {
         return storyboard.instantiateViewController(withIdentifier: storyboardIdentifier) as! Self
     }
 }
+

@@ -23,7 +23,7 @@
   "resource_bundles": {
     "SBAProgressHud": "SBAProgressHud/*.{lproj,storyboard,png}"
   },
-  "resources": "SBAProgressHud/SBAProgressHud.storyboard",
+  "resources": "SBAProgressHud/*.{storyboard,png}",
   "frameworks": [
     "Foundation",
     "UIKit"

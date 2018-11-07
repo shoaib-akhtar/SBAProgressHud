@@ -11,11 +11,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SBAProgressHud:
-    :commit: 597825254ef365a53f97828422b31c7c730778b3
+    :commit: 023f62d2cdfe2ac99dbb089c9e288edf7e0f3b70
     :git: https://github.com/shoaib-akhtar/SBAProgressHud
 
 SPEC CHECKSUMS:
-  SBAProgressHud: aed4ee311850bded4767a52b908102749f43ab44
+  SBAProgressHud: 7085b4be7c18e3c9806c8c805e17633da9dfe97d
 
 PODFILE CHECKSUM: 11924bcf3f93003be0179b0ef3d2620508d63021
 
