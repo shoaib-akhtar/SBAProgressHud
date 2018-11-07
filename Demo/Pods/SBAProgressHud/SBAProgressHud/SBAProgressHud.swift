@@ -11,11 +11,22 @@ public enum SBAProgressType: Int{
     case indeterminate
 }
 public class SBAProgressHud{
+    @available(*, deprecated, message: "This method is deprecated, will be removed in future releases")
     public static func showHud(to view: UIView,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
         SBAProgressHudInternal.shared.showHud(to: view, title: title, type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
     }
+    @available(*, deprecated, message: "This method is deprecated, will be removed in future releases")
     public static func hideHud(from view: UIView){
         SBAProgressHudInternal.shared.hideHud(from: view)
+    }
+    
+    
+    
+    public static func showHud(title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
+        SBAProgressHudInternal.shared.showHud(title: title, type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
+    }
+    public static func hideHud(){
+        SBAProgressHudInternal.shared.hideHud()
     }
     
 }
@@ -23,7 +34,7 @@ fileprivate class SBAProgressHudInternal {
     static let shared = SBAProgressHudInternal()
     private var progressViewController: SBAProgressViewController?
     
-    public func showHud(to view: UIView,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
+    public func showHud(to view: UIView? = nil,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
         // Hiding already presented hud
         hideHud(from: view)
         //
@@ -47,7 +58,7 @@ fileprivate class SBAProgressHudInternal {
         
         
     }
-    public func hideHud(from view: UIView){
+    public func hideHud(from view: UIView? = nil){
         if let progressViewController = progressViewController{
             progressViewController.view.window?.isHidden = true
             progressViewController.dismiss(animated: true, completion: nil)

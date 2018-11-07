@@ -20,15 +20,15 @@ class ViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            SBAProgressHud.showHud(to: view,removeAfter: 2)
+            SBAProgressHud.showHud(removeAfter: 2)
         case 1:
-            SBAProgressHud.showHud(to: view,title: "Loading...",removeAfter: 2)
+            SBAProgressHud.showHud(title: "Loading...",removeAfter: 2)
         case 2:
-            SBAProgressHud.showHud(to: view, title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
+            SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 2)
         case 3:
-            SBAProgressHud.showHud(to: view, title: "Loading...",dimBackground: true,removeAfter: 2)
+            SBAProgressHud.showHud(title: "Loading...",dimBackground: true,removeAfter: 2)
         case 4:
-            SBAProgressHud.showHud(to: view, title: "Loading...", tintColor: UIColor.orange,removeAfter: 3)
+            SBAProgressHud.showHud(title: "Loading...", tintColor: UIColor.orange,removeAfter: 3)
         default:
             print("Empty")
         }
