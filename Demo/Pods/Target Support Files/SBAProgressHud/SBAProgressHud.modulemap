@@ -1,6 +1,0 @@
-framework module SBAProgressHud {
-  umbrella header "SBAProgressHud-umbrella.h"
-
-  export *
-  module * { export * }
-}
