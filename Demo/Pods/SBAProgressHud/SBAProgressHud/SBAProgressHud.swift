@@ -11,21 +11,14 @@ public enum SBAProgressType: Int{
     case indeterminate
     case success
     case error
+    case snake
+    case circular
+    case eclipse
 }
 public class SBAProgressHud{
-    @available(*, deprecated, message: "This method is deprecated, will be removed in future releases")
-    public static func showHud(to view: UIView,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
-        SBAProgressHudInternal.shared.showHud(to: view, title: title, type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
-    }
-    @available(*, deprecated, message: "This method is deprecated, will be removed in future releases")
-    public static func hideHud(from view: UIView){
-        SBAProgressHudInternal.shared.hideHud(from: view)
-    }
-    
-    
-    
-    public static func showHud(title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
-        SBAProgressHudInternal.shared.showHud(title: title, type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
+
+    public static func showHud(title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,indicatorBgColor: UIColor = .white,dimBackground: Bool = false,removeAfter: Double? = nil){
+        SBAProgressHudInternal.shared.showHud(title: title, type: type, tintColor: tintColor,indicatorBgColor: indicatorBgColor, dimBackground: dimBackground, removeAfter: removeAfter)
     }
     public static func hideHud(){
         SBAProgressHudInternal.shared.hideHud()
@@ -36,7 +29,7 @@ fileprivate class SBAProgressHudInternal {
     static let shared = SBAProgressHudInternal()
     private var progressViewController: SBAProgressViewController?
     
-    public func showHud(to view: UIView? = nil,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil){
+    public func showHud(to view: UIView? = nil,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,indicatorBgColor: UIColor,dimBackground: Bool = false,removeAfter: Double? = nil){
         // Hiding already presented hud
         hideHud(from: view)
         //
@@ -50,7 +43,7 @@ fileprivate class SBAProgressHudInternal {
         progressViewController = SBAProgressViewController.initFromStoryboard()
         alertWindow.rootViewController?.present(progressViewController!, animated: true, completion: nil)
         
-        progressViewController?.setUp(with: title,type: type, tintColor: tintColor, dimBackground: dimBackground, removeAfter: removeAfter)
+        progressViewController?.setUp(with: title,type: type, tintColor: tintColor,indicatorBgColor: indicatorBgColor, dimBackground: dimBackground, removeAfter: removeAfter)
         
         if let removeAfter = removeAfter{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0 * removeAfter) {
@@ -101,8 +94,15 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         let image = UIImage.init(named: named, in: bundle(), compatibleWith: nil)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         return image
     }
+    private func rotateView(targetView: UIView, duration: Double = 1.0,option: UIView.AnimationOptions = .curveLinear) {
+        UIView.animate(withDuration: duration, delay: 0.0, options: option, animations: {
+            targetView.transform = targetView.transform.rotated(by: CGFloat(Float.pi))
+        }) { finished in
+            self.rotateView(targetView: targetView, duration: duration)
+        }
+    }
     
-    func setUp(with title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,dimBackground: Bool = false,removeAfter: Double? = nil) {
+    func setUp(with title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,indicatorBgColor: UIColor,dimBackground: Bool = false,removeAfter: Double? = nil) {
         
         if let title = title, !title.isEmpty{
             labelTopConstraint.constant = 8
@@ -115,6 +115,8 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         titleLabel.numberOfLines = 0
         activityView.layer.cornerRadius = 5.0
         activityView.layer.masksToBounds = true
+        
+        activityView.backgroundColor = indicatorBgColor
         
         // Customisation
         activityView.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.2).cgColor
@@ -140,9 +142,21 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
         case .error:
             indicatorImageView.isHidden = false
             indicatorImageView.image = image(named: "SBACross")
+        case .snake:
+            indicatorImageView.isHidden = false
+            indicatorImageView.image =  image(named: "SBASnake")
+            rotateView(targetView: indicatorImageView,duration: 0.5)
+        case .circular:
+            indicatorImageView.isHidden = false
+            indicatorImageView.image =  image(named: "SBACircular")
+            rotateView(targetView: indicatorImageView,duration: 0.5)
+        case .eclipse:
+            indicatorImageView.isHidden = false
+            indicatorImageView.image =  image(named: "SBAEclipse")
+            rotateView(targetView: indicatorImageView,duration: 0.5)
         }
         
-        
+
         if dimBackground{
             view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
             

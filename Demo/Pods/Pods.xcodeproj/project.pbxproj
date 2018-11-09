@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,10 @@
 		389B6B7EA42A88E98C6B919E5CC62A54 /* Pods-DemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0D2E72371648C6A971969F4E37CF66 /* Pods-DemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C65AC778007DB6DED51AFF3B11B33DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		400274C115F4EB21781704B1CF408021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		480E6AB02193FF690024C4A4 /* SBASnake.png in Resources */ = {isa = PBXBuildFile; fileRef = 480E6AAF2193FF690024C4A4 /* SBASnake.png */; };
+		480E6AB12193FF690024C4A4 /* SBASnake.png in Resources */ = {isa = PBXBuildFile; fileRef = 480E6AAF2193FF690024C4A4 /* SBASnake.png */; };
+		480E6AB92194081F0024C4A4 /* SBACircular.png in Resources */ = {isa = PBXBuildFile; fileRef = 480E6AB82194081F0024C4A4 /* SBACircular.png */; };
+		480E6ABA2194081F0024C4A4 /* SBACircular.png in Resources */ = {isa = PBXBuildFile; fileRef = 480E6AB82194081F0024C4A4 /* SBACircular.png */; };
 		4B231E035E89688863B916778BA9FA7C /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6769A6750FB9D8CE749D8BF1A9B0890C /* Pods-Demo-dummy.m */; };
 		4ED000B9BC349B627FCEC108431DF9CB /* SBACross.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACF9EE648AC544A256CF347AD9C65FE /* SBACross.png */; };
 		512919D0D7C524D9C1C89EB93C0782AB /* SBAProgressHud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A77435B89F61E10E6C7E1E9EDB4B9DC9 /* SBAProgressHud.bundle */; };
@@ -62,16 +66,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0265982DF274CADAD5E5C7BDB699FBB1 /* Pods_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DemoUITests.framework; path = "Pods-DemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0265982DF274CADAD5E5C7BDB699FBB1 /* Pods_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1780C55CDD704CAE350552BA1ED9887E /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		18749619AE0D58554645C38180AEE97E /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Demo.framework; path = "Pods-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18749619AE0D58554645C38180AEE97E /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFA4C3D51C86E61E444342690BAF642 /* Pods-DemoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoUITests-frameworks.sh"; sourceTree = "<group>"; };
 		2848969F26DFC7618A3990522DE72E72 /* ResourceBundle-SBAProgressHud-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SBAProgressHud-Info.plist"; sourceTree = "<group>"; };
 		287D138BF5F91AD950B082523EC7FCC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365064EEA347D114B72EE0F5AFE2EA23 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		39435515892CF3959CD7853B5C2E0873 /* SBAProgressHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SBAProgressHud.framework; path = SBAProgressHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39435515892CF3959CD7853B5C2E0873 /* SBAProgressHud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBAProgressHud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460661C39823C6D76A1EE3989A9EFA21 /* Pods-DemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoTests.modulemap"; sourceTree = "<group>"; };
 		47D55EAF6FD17097AD74A78E02711DD6 /* Pods-DemoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoUITests-resources.sh"; sourceTree = "<group>"; };
+		480E6AAF2193FF690024C4A4 /* SBASnake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SBASnake.png; sourceTree = "<group>"; };
+		480E6AB82194081F0024C4A4 /* SBACircular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SBACircular.png; sourceTree = "<group>"; };
 		5161990AADAE380D9C90147108B2C472 /* SBAProgressHud.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBAProgressHud.swift; path = SBAProgressHud/SBAProgressHud.swift; sourceTree = "<group>"; };
 		52C9CB66964CB8D073FBC717C2955F51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5625B2556DE4889DAD338B17767FB2B5 /* Pods-DemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -89,13 +95,13 @@
 		8B0D2E72371648C6A971969F4E37CF66 /* Pods-DemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoUITests-umbrella.h"; sourceTree = "<group>"; };
 		8D634C266DA0D7B6E8655FD1D72A9212 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9BB443B39BB9E2179E2B0EDFE26A5758 /* SBAProgressHud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBAProgressHud.xcconfig; sourceTree = "<group>"; };
 		9C51C160604CF6C4E6FBAAB080FF1141 /* Pods-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A77435B89F61E10E6C7E1E9EDB4B9DC9 /* SBAProgressHud.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SBAProgressHud.bundle; path = "SBAProgressHud-SBAProgressHud.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77435B89F61E10E6C7E1E9EDB4B9DC9 /* SBAProgressHud.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBAProgressHud.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80739A96D3A4F0243806AA56B9403C9 /* Pods-DemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoUITests-dummy.m"; sourceTree = "<group>"; };
 		AED14492274C16CAA854C70C603709FE /* SBAProgressHud-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBAProgressHud-prefix.pch"; sourceTree = "<group>"; };
-		AEF3EDF7A44EB59E34DA4A372E42365F /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DemoTests.framework; path = "Pods-DemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF3EDF7A44EB59E34DA4A372E42365F /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B794613BDC9D1FD29C700F6BF7B427C8 /* Pods-DemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B94929563C4336198098A88ACE632219 /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -199,7 +205,6 @@
 				A6C976726595C219F140CB4BDA9AD7EF /* Resources */,
 				BAF4B7B2D32615F09881247B5BA550F8 /* Support Files */,
 			);
-			name = SBAProgressHud;
 			path = SBAProgressHud;
 			sourceTree = "<group>";
 		};
@@ -239,6 +244,8 @@
 		A6C976726595C219F140CB4BDA9AD7EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				480E6AB82194081F0024C4A4 /* SBACircular.png */,
+				480E6AAF2193FF690024C4A4 /* SBASnake.png */,
 				6ACF9EE648AC544A256CF347AD9C65FE /* SBACross.png */,
 				6623A9F15FCA51B4C3488B43BBA6C62F /* SBAProgressHud.storyboard */,
 				DD1DA220FC6AE9E1E9FD6C030B4A91C5 /* SBATick.png */,
@@ -441,6 +448,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					171FCFC21741D48A604FD36537B4A221 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -469,8 +481,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D56445753C83F45BF608AEF191C8345 /* SBACross.png in Resources */,
+				480E6ABA2194081F0024C4A4 /* SBACircular.png in Resources */,
 				826C329EFB989451178CCFBB8FA86020 /* SBAProgressHud.storyboard in Resources */,
 				5252E6AED28C1CE6055A763DDCF566BA /* SBATick.png in Resources */,
+				480E6AB12193FF690024C4A4 /* SBASnake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +495,9 @@
 				4ED000B9BC349B627FCEC108431DF9CB /* SBACross.png in Resources */,
 				512919D0D7C524D9C1C89EB93C0782AB /* SBAProgressHud.bundle in Resources */,
 				AE1373C8827128E88E250E1F0FAE86DB /* SBAProgressHud.storyboard in Resources */,
+				480E6AB92194081F0024C4A4 /* SBACircular.png in Resources */,
 				74CAAD2972EA61DA26E4824CBA94C13A /* SBATick.png in Resources */,
+				480E6AB02193FF690024C4A4 /* SBASnake.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,11 +650,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Demo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Demo/Pods-Demo.modulemap";
 				OTHER_LDFLAGS = "";
@@ -660,13 +672,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BB443B39BB9E2179E2B0EDFE26A5758 /* SBAProgressHud.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SBAProgressHud";
 				INFOPLIST_FILE = "Target Support Files/SBAProgressHud/ResourceBundle-SBAProgressHud-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SBAProgressHud;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -690,11 +705,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-DemoTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DemoTests/Pods-DemoTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -728,11 +739,7 @@
 				INFOPLIST_FILE = "Target Support Files/SBAProgressHud/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SBAProgressHud/SBAProgressHud.modulemap";
 				PRODUCT_MODULE_NAME = SBAProgressHud;
 				PRODUCT_NAME = SBAProgressHud;
@@ -765,11 +772,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-DemoUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -790,13 +793,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BB443B39BB9E2179E2B0EDFE26A5758 /* SBAProgressHud.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SBAProgressHud";
 				INFOPLIST_FILE = "Target Support Files/SBAProgressHud/ResourceBundle-SBAProgressHud-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = SBAProgressHud;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -883,11 +890,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-DemoTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DemoTests/Pods-DemoTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -922,11 +925,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Demo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Demo/Pods-Demo.modulemap";
 				OTHER_LDFLAGS = "";
@@ -962,11 +961,7 @@
 				INFOPLIST_FILE = "Target Support Files/SBAProgressHud/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SBAProgressHud/SBAProgressHud.modulemap";
 				PRODUCT_MODULE_NAME = SBAProgressHud;
 				PRODUCT_NAME = SBAProgressHud;
@@ -1000,11 +995,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-DemoUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.modulemap";
 				OTHER_LDFLAGS = "";

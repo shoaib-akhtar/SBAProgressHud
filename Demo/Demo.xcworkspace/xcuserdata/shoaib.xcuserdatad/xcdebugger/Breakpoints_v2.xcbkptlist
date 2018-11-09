@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/SBAProgressHud/SBAProgressHud/SBAProgressHud.swift"
-            timestampString = "563262844.570627"
+            timestampString = "563458088.270924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "setUp(with:type:tintColor:dimBackground:removeAfter:)"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "setUp(with:type:tintColor:indicatorBgColor:dimBackground:removeAfter:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/SBAProgressHud/SBAProgressHud/SBAProgressHud.swift"
-            timestampString = "563262844.571005"
+            timestampString = "563458088.27099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "image(named:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/SBAProgressHud/SBAGif.swift"
+            timestampString = "563348522.949614"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "animatedImageWithSource(source:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
