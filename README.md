@@ -5,7 +5,13 @@ SBAProgressHud is a simple and easy-to-use progress HUD for your iOS apps writte
 
 <a href="https://imgflip.com/gif/2lm4y6"><img src="https://i.imgflip.com/2lm4y6.gif" title="made at imgflip.com"/></a>
 
-![alt text](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/1.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/1-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/1.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/2-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/2.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/3-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/3.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/4-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/4.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/5-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/5.PNG)
+[![](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/6-small.PNG)](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/6.PNG)
+
 
 Installation
 ------------
