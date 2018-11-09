@@ -5,6 +5,8 @@ SBAProgressHud is a simple and easy-to-use progress HUD for your iOS apps writte
 
 <a href="https://imgflip.com/gif/2lm4y6"><img src="https://i.imgflip.com/2lm4y6.gif" title="made at imgflip.com"/></a>
 
+![alt text](https://raw.githubusercontent.com/shoaib-akhtar/SBAProgressHud/master/images/1.PNG)
+
 Installation
 ------------
 
