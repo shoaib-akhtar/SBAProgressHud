@@ -3,9 +3,17 @@ All notable changes to this project will be documented in this file.
 `SBAProgressHud` adheres to [Semantic Versioning](https://semver.org/).
 
 #### 1.x Releases
+- `1.2` Releases - [1.2](#2) 
 - `1.1` Releases - [1.1](#2) 
 - `1.0` Releases - [1.0](#1)
 
+## [1.2](https://github.com/shoaib-akhtar/SBAProgressHud/master/tag/1.2)
+Released on 2019-14-5.
+
+#### Updated
+- Project to support Swift 5.0 and Xcode 10.2.1
+- Updated by [Shoaib Akhtar](https://github.com/shoaib-akhtar),
+---
 
 ## [1.1](https://github.com/shoaib-akhtar/SBAProgressHud/master/tag/1.1)
 Released on 2018-11-03.
