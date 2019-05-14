@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: eefba1a4faab276885352f068b28cae79e314e98
+PODS:
+  - SBAProgressHud (1.2)
+
+DEPENDENCIES:
+  - SBAProgressHud
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SBAProgressHud
+
+SPEC CHECKSUMS:
+  SBAProgressHud: 7085b4be7c18e3c9806c8c805e17633da9dfe97d
+
+PODFILE CHECKSUM: 7c23d5674a1c189a250d51c17b046b656550ed81
 
 COCOAPODS: 1.5.3
