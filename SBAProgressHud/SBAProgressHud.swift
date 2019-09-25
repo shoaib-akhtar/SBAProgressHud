@@ -28,13 +28,13 @@ public class SBAProgressHud{
 fileprivate class SBAProgressHudInternal {
     static let shared = SBAProgressHudInternal()
     private var progressViewController: SBAProgressViewController?
-    
+    var window : UIWindow?
     public func showHud(to view: UIView? = nil,title: String? = nil,type: SBAProgressType = .indeterminate,tintColor: UIColor = .darkGray,indicatorBgColor: UIColor,dimBackground: Bool = false,removeAfter: Double? = nil){
         // Hiding already presented hud
         hideHud(from: view)
         //
         let alertWindow = UIWindow(frame: UIScreen.main.bounds)
-        
+        self.window = alertWindow
         alertWindow.rootViewController = SBAProgressRootViewController()
         
         alertWindow.windowLevel = UIWindow.Level.normal + 1;
@@ -57,8 +57,15 @@ fileprivate class SBAProgressHudInternal {
         if let progressViewController = progressViewController{
             progressViewController.view.window?.isHidden = true
             progressViewController.dismiss(animated: true, completion: nil)
+            progressViewController.activityView = nil
+            progressViewController.activityIndicatorView = nil
+            progressViewController.titleLabel = nil
+            progressViewController.indicatorImageView = nil
+            progressViewController.labelTopConstraint = nil
+
             self.progressViewController = nil
         }
+        self.window = nil
     }
     
 }
@@ -68,6 +75,9 @@ fileprivate class SBAProgressRootViewController: UIViewController {
         get{
             return UIApplication.shared.statusBarStyle
         }
+    }
+    deinit {
+        print("SBAProgressRootViewController deallocated")
     }
 }
 
@@ -164,6 +174,9 @@ class SBAProgressViewController: UIViewController,StoryboardInitializable {
             view.backgroundColor = UIColor.clear
         }
         
+    }
+    deinit {
+        print("SBAProgressViewController deallocated")
     }
 }
 
